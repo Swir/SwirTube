@@ -28,10 +28,3 @@ A simple Python-based YouTube downloader that allows you to download videos or e
 - **Python 3.6+** installed on your system.
 - **ffmpeg** installed and accessible via `PATH`, or the ability to manually specify its location.
 
-## Instalacja / Installation
-
-1. **Sklonuj Repozytorium:**
-
-   ```bash
-   git clone https://github.com/yourusername/youtube-downloader.git
-   cd youtube-downloader
