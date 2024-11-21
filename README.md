@@ -1,4 +1,4 @@
-# SwirTvube
+# SwirTube
 
 Prosty downloader YouTube napisany w Pythonie, który pozwala na pobieranie filmów lub wyodrębnianie audio w formacie MP3. Program oferuje przyjazny interfejs konsoli z paskami postępu i szczegółowym logowaniem. Dodatkowo umożliwia podanie ścieżki do `ffmpeg`, jeśli nie jest on dostępny w zmiennej środowiskowej `PATH`.
 
