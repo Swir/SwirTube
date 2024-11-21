@@ -57,3 +57,11 @@ Wkład / Contributing
 Jeśli chcesz przyczynić się do rozwoju tego projektu, otwórz pull request lub zgłoś issue.
 
 If you want to contribute to the development of this project, open a pull request or report an issue.     
+
+##Zainstaluj ffmpeg / Install ffmpeg:
+
+Windows:
+        Pobierz najnowszą statyczną wersję ze strony ffmpeg.
+        Rozpakuj zawartość i umieść plik wykonywalny ffmpeg.exe w folderze (np. C:\ffmpeg\bin).
+        Dodaj katalog ffmpeg\bin do zmiennej środowiskowej PATH.
+        
