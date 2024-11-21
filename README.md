@@ -27,4 +27,33 @@ A simple Python-based YouTube downloader that allows you to download videos or e
 
 - **Python 3.6+** installed on your system.
 - **ffmpeg** installed and accessible via `PATH`, or the ability to manually specify its location.
+##Opis Opcji / Options Description:
 
+    1. Pobierz z YouTube / Download from YouTube:
+        Wprowadź URL wideo z YouTube.
+        Wybierz format pobierania:
+            1. Wideo / Video: Pobierz wideo w najlepszej dostępnej jakości.
+            2. Audio (MP3) / Audio (MP3): Wyodrębnij i pobierz audio jako plik MP3.
+        Jeśli wybrano audio, program sprawdzi obecność ffmpeg. Jeśli nie jest znaleziony, zapyta o podanie ścieżki ręcznie.
+
+    2. Ustaw ścieżkę do ffmpeg / Set ffmpeg path:
+        Podaj pełną ścieżkę do pliku ffmpeg (np. C:\ffmpeg\bin\ffmpeg.exe na Windows lub /usr/local/bin/ffmpeg na macOS/Linux).
+        Program sprawdzi poprawność ścieżki i zapisze ją w konfiguracji.
+
+    3. Wyjście / Exit:
+        Zakończenie programu.
+  ##Konfiguracja / Configuration
+
+Program zapisuje ustawienia ścieżki do ffmpeg w pliku config.json, dzięki czemu nie musisz podawać jej przy każdym uruchomieniu programu.
+
+The program saves the ffmpeg path settings in the config.json file, so you don't need to provide it every time you run the program.
+Logowanie / Logging
+
+Program zapisuje logi w pliku downloader.log, które zawierają informacje o pobieraniach oraz ewentualnych błędach.
+
+The program logs activities and errors in the downloader.log file.
+Wkład / Contributing
+
+Jeśli chcesz przyczynić się do rozwoju tego projektu, otwórz pull request lub zgłoś issue.
+
+If you want to contribute to the development of this project, open a pull request or report an issue.     
