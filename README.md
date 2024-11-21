@@ -42,6 +42,7 @@ A simple Python-based YouTube downloader that allows you to download videos or e
 
     3. Wyjście / Exit:
         Zakończenie programu.
+       
   ##Konfiguracja / Configuration
 
 Program zapisuje ustawienia ścieżki do ffmpeg w pliku config.json, dzięki czemu nie musisz podawać jej przy każdym uruchomieniu programu.
