@@ -1,67 +1,169 @@
-# SwirTube
+# SwirTube - YouTube Downloader
 
-Prosty downloader YouTube napisany w Pythonie, który pozwala na pobieranie filmów lub wyodrębnianie audio w formacie MP3. Program oferuje przyjazny interfejs konsoli z paskami postępu i szczegółowym logowaniem. Dodatkowo umożliwia podanie ścieżki do `ffmpeg`, jeśli nie jest on dostępny w zmiennej środowiskowej `PATH`.
+![🇵🇱 Polski](https://img.shields.io/badge/Language-Polski-blue) ![🇬🇧 English](https://img.shields.io/badge/Language-English-green)
 
-A simple Python-based YouTube downloader that allows you to download videos or extract audio in MP3 format. The program provides a user-friendly console interface with progress bars and detailed logging. It also allows you to specify the path to `ffmpeg` if it's not available in your system's `PATH`.
+---
 
-## Funkcje / Features
+## 🇵🇱 Opis Projektu
 
-- **Pobieranie Filmów z YouTube:** Zapisz filmy w najlepszej dostępnej jakości.
-- **Wyodrębnianie Audio:** Konwertuj i zapisuj audio jako pliki MP3.
-- **Przyjazny Interfejs:** Interaktywne menu z opcjami pobierania i konfiguracji `ffmpeg`.
-- **Paski Postępu:** Paski postępu pokazujące status pobierania.
-- **Logowanie:** Szczegółowe logi działań i błędów.
-- **Konfiguracja:** Zapisuje ustawienia ścieżki do `ffmpeg` dla przyszłych użyć.
+**SwirTube** to nowoczesny i intuicyjny program do pobierania wideo oraz audio z YouTube. Wykorzystuje bibliotekę `yt_dlp` oraz `Rich` do tworzenia przyjaznego interfejsu w terminalu.
 
-- **Download YouTube Videos:** Save videos in the best available quality.
-- **Extract Audio:** Convert and save audio as MP3 files.
-- **User-Friendly Interface:** Interactive menu with options for downloading and configuring `ffmpeg`.
-- **Progress Indicators:** Progress bars showing download status.
-- **Logging:** Detailed logs of activities and errors.
-- **Configuration Persistence:** Saves `ffmpeg` path settings for future use.
+### 📋 Funkcje
 
-## Wymagania / Prerequisites
+- **Pobieranie wideo** w wybranej jakości (MP4/WebM)
+- **Pobieranie audio** w formacie MP3
+- **Dynamiczny wybór dostępnych jakości wideo**
+- **Obsługa plików cookies** dla uwierzytelnionego pobierania
+- **Konfiguracja ścieżki do `ffmpeg`**
+- **Łatwe w użyciu menu** z intuicyjnymi opcjami
 
-- **Python 3.6+** zainstalowany na Twoim systemie.
-- **ffmpeg** zainstalowany i dostępny poprzez `PATH`, lub możliwość ręcznego podania jego lokalizacji.
+### 🛠 Instalacja
 
-- **Python 3.6+** installed on your system.
-- **ffmpeg** installed and accessible via `PATH`, or the ability to manually specify its location.
-##Opis Opcji / Options Description:
+1. **Klonowanie Repozytorium:**
 
-    1. Pobierz z YouTube / Download from YouTube:
-        Wprowadź URL wideo z YouTube.
-        Wybierz format pobierania:
-            1. Wideo / Video: Pobierz wideo w najlepszej dostępnej jakości.
-            2. Audio (MP3) / Audio (MP3): Wyodrębnij i pobierz audio jako plik MP3.
-        Jeśli wybrano audio, program sprawdzi obecność ffmpeg. Jeśli nie jest znaleziony, zapyta o podanie ścieżki ręcznie.
+    ```bash
+    git clone https://github.com/Swir/SwirTube.git
+    cd SwirTube
+    ```
 
-    2. Ustaw ścieżkę do ffmpeg / Set ffmpeg path:
-        Podaj pełną ścieżkę do pliku ffmpeg (np. C:\ffmpeg\bin\ffmpeg.exe na Windows lub /usr/local/bin/ffmpeg na macOS/Linux).
-        Program sprawdzi poprawność ścieżki i zapisze ją w konfiguracji.
+2. **Instalacja Wymagań:**
 
-    3. Wyjście / Exit:
-        Zakończenie programu.
-       
-## konf
-Program zapisuje ustawienia ścieżki do ffmpeg w pliku config.json, dzięki czemu nie musisz podawać jej przy każdym uruchomieniu programu.
+    Upewnij się, że masz zainstalowanego Pythona (wersja 3.6 lub wyższa).
 
-The program saves the ffmpeg path settings in the config.json file, so you don't need to provide it every time you run the program.
-Logowanie / Logging
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Program zapisuje logi w pliku downloader.log, które zawierają informacje o pobieraniach oraz ewentualnych błędach.
+3. **Instalacja `ffmpeg`:**
 
-The program logs activities and errors in the downloader.log file.
-Wkład / Contributing
+    Pobierz i zainstaluj `ffmpeg` z [oficjalnej strony](https://ffmpeg.org/download.html). Dodaj `ffmpeg` do zmiennej środowiskowej PATH lub skonfiguruj ścieżkę w programie.
 
-Jeśli chcesz przyczynić się do rozwoju tego projektu, otwórz pull request lub zgłoś issue.
+### 🎬 Użycie
 
-If you want to contribute to the development of this project, open a pull request or report an issue.     
+1. **Uruchomienie Programu:**
 
-##Zainstaluj ffmpeg / Install ffmpeg:
+    ```bash
+    python downloader.py
+    ```
 
-        Windows:
-        Pobierz najnowszą statyczną wersję ze strony ffmpeg.
-        Rozpakuj zawartość i umieść plik wykonywalny ffmpeg.exe w folderze (np. C:\ffmpeg\bin).
-        Dodaj katalog ffmpeg\bin do zmiennej środowiskowej PATH.
-        
+2. **Kroki w Programie:**
+    - Wybierz opcję pobierania z YouTube.
+    - Podaj URL wideo.
+    - Wybierz format pobierania (wideo/audio).
+    - Wybierz jakość wideo (jeśli wybrano wideo).
+    - Wybierz format kontenera (MP4/WebM).
+    - Rozpocznij pobieranie.
+
+### ⚙️ Konfiguracja
+
+- **Ustawienie Ścieżki do `ffmpeg`:**
+
+    Jeśli `ffmpeg` nie jest w PATH, wybierz opcję ustawienia ścieżki w menu programu i podaj pełną ścieżkę do pliku `ffmpeg.exe`.
+
+### 🤝 Wkład w Projekt
+
+1. Forkuj repozytorium.
+2. Stwórz swoją gałąź (`git checkout -b feature/NazwaFunkcji`).
+3. Zatwierdź zmiany (`git commit -m 'Dodaj nową funkcję'`).
+4. Pushuj do gałęzi (`git push origin feature/NazwaFunkcji`).
+5. Otwórz Pull Request.
+
+### 📄 Licencja
+
+Ten projekt jest objęty licencją MIT. Zobacz plik [LICENSE](LICENSE) po więcej informacji.
+
+---
+
+## 🇬🇧 Project Description
+
+**SwirTube** is a modern and intuitive program for downloading videos and audio from YouTube. It leverages the `yt_dlp` and `Rich` libraries to create a user-friendly terminal interface.
+
+### 📋 Features
+
+- **Download videos** in selected quality (MP4/WebM)
+- **Download audio** in MP3 format
+- **Dynamic selection of available video qualities**
+- **Support for cookies** for authenticated downloads
+- **Configuration of `ffmpeg` path**
+- **Easy-to-use menu** with intuitive options
+
+### 🛠 Installation
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/Swir/SwirTube.git
+    cd SwirTube
+    ```
+
+2. **Install Requirements:**
+
+    Ensure you have Python installed (version 3.6 or higher).
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Install `ffmpeg`:**
+
+    Download and install `ffmpeg` from the [official website](https://ffmpeg.org/download.html). Add `ffmpeg` to your system PATH or configure the path within the program.
+
+### 🎬 Usage
+
+1. **Run the Program:**
+
+    ```bash
+    python downloader.py
+    ```
+
+2. **Program Steps:**
+    - Select the option to download from YouTube.
+    - Enter the video URL.
+    - Choose the download format (video/audio).
+    - Select the video quality (if video is chosen).
+    - Choose the container format (MP4/WebM).
+    - Start the download.
+
+### ⚙️ Configuration
+
+- **Setting the `ffmpeg` Path:**
+
+    If `ffmpeg` is not in PATH, select the option to set the path in the program menu and provide the full path to the `ffmpeg.exe` file.
+
+### 🤝 Contributing
+
+1. Fork the repository.
+2. Create your branch (`git checkout -b feature/FeatureName`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/FeatureName`).
+5. Open a Pull Request.
+
+### 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+## 📷 Screenshots
+
+### 🇵🇱 Polska
+
+![Menu](screenshots/menu_pl.png)
+
+### 🇬🇧 English
+
+![Menu](screenshots/menu_en.png)
+
+---
+
+## 📝 Kontakt / Contact
+
+- **Polska:** Swir@example.com
+- **English:** Swir@example.com
+
+---
+
+## 🔗 Linki
+
+- [Repozytorium GitHub](https://github.com/Swir/SwirTube)
+- [Strona Projektu](https://github.com/Swir/SwirTube)
