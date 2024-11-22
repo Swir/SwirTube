@@ -17,6 +17,33 @@
 - **Konfiguracja ścieżki do `ffmpeg`**
 - **Łatwe w użyciu menu** z intuicyjnymi opcjami
 
+### 🍪 Obsługa Plików Cookies
+
+**SwirTube** umożliwia korzystanie z plików cookies (`cookies.txt`), co pozwala na uwierzytelnione pobieranie treści chronionych lub dostępnych tylko dla zalogowanych użytkowników. 
+
+#### Jak Utworzyć `cookies.txt`:
+
+1. **Zaloguj się na YouTube:**
+   - Otwórz przeglądarkę i zaloguj się na swoje konto YouTube.
+
+2. **Zainstaluj Rozszerzenie do Eksportowania Cookies:**
+   - Na przykład, możesz użyć [Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/llfapgnmjlpndacddaoapfljgddadacj) dla Google Chrome.
+
+3. **Eksportuj Pliki Cookies:**
+   - Po zainstalowaniu rozszerzenia, kliknij jego ikonę w przeglądarce.
+   - Wybierz domenę `youtube.com` i wyeksportuj pliki cookies do pliku `cookies.txt`.
+
+4. **Umieść `cookies.txt` w Katalogu Programu:**
+   - Skopiuj plik `cookies.txt` do folderu, w którym znajduje się `downloader.py`.
+
+#### Używanie Plików Cookies w Programie:
+
+- **Automatyczne Wykrywanie:**
+  - Program automatycznie sprawdza, czy plik `cookies.txt` istnieje w katalogu. Jeśli tak, używa go do uwierzytelnionego pobierania.
+  
+- **Brak Pliku Cookies:**
+  - Jeśli `cookies.txt` nie zostanie znaleziony, program będzie próbował pobrać treści bez użycia cookies.
+
 ### 🛠 Instalacja
 
 1. **Klonowanie Repozytorium:**
@@ -87,6 +114,33 @@ Ten projekt jest objęty licencją MIT. Zobacz plik [LICENSE](LICENSE) po więce
 - **Configuration of `ffmpeg` path**
 - **Easy-to-use menu** with intuitive options
 
+### 🍪 Cookies Support
+
+**SwirTube** allows the use of cookies (`cookies.txt`), enabling authenticated downloads of protected content or content available only to logged-in users.
+
+#### How to Create `cookies.txt`:
+
+1. **Log in to YouTube:**
+   - Open your browser and log in to your YouTube account.
+
+2. **Install a Cookie Export Extension:**
+   - For example, use [Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/llfapgnmjlpndacddaoapfljgddadacj) for Google Chrome.
+
+3. **Export Cookies:**
+   - After installing the extension, click its icon in the browser.
+   - Select the `youtube.com` domain and export the cookies to a `cookies.txt` file.
+
+4. **Place `cookies.txt` in the Program Directory:**
+   - Copy the `cookies.txt` file to the folder where `downloader.py` is located.
+
+#### Using Cookies in the Program:
+
+- **Automatic Detection:**
+  - The program automatically checks if `cookies.txt` exists in the directory. If found, it uses it for authenticated downloads.
+  
+- **No Cookies File:**
+  - If `cookies.txt` is not found, the program will attempt to download content without using cookies.
+
 ### 🛠 Installation
 
 1. **Clone the Repository:**
@@ -154,14 +208,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ![Menu](screenshots/menu_en.png)
 
----
-
-## 📝 Kontakt / Contact
-
-- **Polska:** Swir@example.com
-- **English:** Swir@example.com
-
----
 
 ## 🔗 Linki
 
