@@ -2,32 +2,42 @@
 
 # 🎬 SwirTube
 
-**Terminal YouTube video & audio downloader powered by yt-dlp**  
-**Terminalowy downloader wideo i audio z YouTube oparty na yt-dlp**
+### Terminal Video & Audio Downloader Powered by yt-dlp
+
+**Python • yt-dlp • Rich • FFmpeg • MP3 Extraction • Config + Logs**
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![yt-dlp](https://img.shields.io/badge/Engine-yt--dlp-red)
-![CLI](https://img.shields.io/badge/UI-Rich-8A2BE2)
-![FFmpeg](https://img.shields.io/badge/Audio-FFmpeg-007808?logo=ffmpeg)
+![Rich](https://img.shields.io/badge/CLI-Rich-8A2BE2)
+![FFmpeg](https://img.shields.io/badge/Audio-FFmpeg-007808?logo=ffmpeg&logoColor=white)
 
 </div>
 
 ---
 
-## 🇵🇱 Polski
+## 🚀 About
 
-SwirTube to terminalowy downloader napisany w Pythonie. Program wykorzystuje `yt-dlp` do pobierania materiałów, `Rich` do czytelnego interfejsu konsolowego oraz FFmpeg do konwersji ścieżek audio do MP3.
+**SwirTube** is a Python terminal downloader built around `yt-dlp`. It provides a clean Rich-powered console workflow for downloading supported media, extracting audio through FFmpeg and keeping application settings/logs locally.
 
-### ✨ Funkcje
-- pobieranie wideo z pojedynczego URL
-- ekstrakcja audio do MP3 192 kb/s
-- obsługa własnej ścieżki do FFmpeg
-- opcjonalny plik cookies
-- zapis ustawień do `config.json`
-- logowanie działania do `downloader.log`
-- paski postępu i komunikaty przez bibliotekę Rich
+It is designed for users searching for a **yt-dlp terminal GUI alternative**, **Python video downloader CLI**, **YouTube audio downloader Python**, **yt-dlp MP3 converter** or a lightweight console frontend for media they are authorized to download.
 
-### 🚀 Instalacja
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🎬 Video download | Process a supported media URL |
+| 🎵 MP3 extraction | Extract audio at 192 kb/s |
+| ⚙️ FFmpeg path | Configure a custom FFmpeg location |
+| 🍪 Cookies file | Optional cookies-file support |
+| 💾 Settings | Store configuration in `config.json` |
+| 📜 Logs | Save operation details in `downloader.log` |
+| 📊 Progress | Rich-powered progress bars and prompts |
+
+---
+
+## 📦 Installation
 
 ```bash
 git clone https://github.com/Swir/SwirTube.git
@@ -36,39 +46,30 @@ pip install yt-dlp rich
 python swirtube.py
 ```
 
-Do konwersji audio wymagany jest **FFmpeg** dostępny w `PATH` albo wskazany w konfiguracji programu.
+For audio conversion, install **FFmpeg** and make it available in `PATH` or configure its location in the application.
 
 ---
 
-## 🇬🇧 English
+## 🔍 Discoverability
 
-SwirTube is a Python terminal downloader built around `yt-dlp`. It uses `Rich` for a clean console interface and FFmpeg for audio post-processing and MP3 extraction.
-
-### ✨ Features
-- download video from a single URL
-- extract audio to 192 kb/s MP3
-- configurable FFmpeg location
-- optional cookies file
-- persistent settings in `config.json`
-- operation logs in `downloader.log`
-- Rich progress bars and terminal prompts
-
-### 🚀 Installation
-
-```bash
-git clone https://github.com/Swir/SwirTube.git
-cd SwirTube
-pip install yt-dlp rich
-python swirtube.py
-```
-
-Audio conversion requires **FFmpeg** in your system `PATH` or configured directly in the application.
+`yt-dlp python cli` • `video downloader python` • `youtube audio downloader python` • `yt-dlp mp3` • `rich downloader cli` • `ffmpeg audio extractor` • `terminal video downloader` • `python media downloader`
 
 ---
 
-## ⚖️ Responsible use / Odpowiedzialne użycie
-Use SwirTube only for media you are authorized to download and in accordance with the source platform's terms.  
-Korzystaj z programu wyłącznie do materiałów, które masz prawo pobierać, zgodnie z zasadami platformy źródłowej.
+## ⚖️ Responsible Use
 
-## 👤 Author / Autor
-Developed by **Swir**.
+Use SwirTube only for media you are authorized to download and in accordance with applicable source-platform terms and law. This project does not grant rights to third-party content.
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Swir** — [@Swir](https://github.com/Swir)
+
+<div align="center">
+
+### 🎬 yt-dlp power with a cleaner terminal workflow
+
+⭐ **Star the repository if you find SwirTube useful!**
+
+</div>
