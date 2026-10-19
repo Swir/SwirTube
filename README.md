@@ -18,6 +18,12 @@
 
 </div>
 
+## 📸 Screenshot
+
+![SwirTube application screenshot](docs/screenshots/application.jpg)
+
+Preview of the application's actual CLI menu output, exported with Rich and rendered for readability. No download was started.
+
 <p align="center">
   <img width="100%" src="assets/readme/progress-card.svg" alt="SwirTube product roadmap progress — N/A because no canonical measurable roadmap exists" />
 </p>
